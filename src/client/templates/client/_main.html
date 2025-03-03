@@ -25,7 +25,7 @@
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center sticky-top shadow-sm">
         <a class="navbar-brand main-heading" href="{% url 'client-dashboard' %}" style="margin-left: 25px;"> 
             The Contrarian Report<span>
                 {% if subscription_plan == 'premium' %}
@@ -33,7 +33,7 @@
                 {% elif subscription_plan == 'standard' %}
                     <span class="text-account-client">Standard Client</span>
                 {% else %}
-                    <span>No Subscription</span>
+                    <span class="text-account-no-subscription">No Subscription</span>
                 {% endif %}
             </span>
         </a>
@@ -60,7 +60,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-secondary navbar-btn" type="button"  
-                        href="{% url 'home' %}">{% translate 'Account settings' %}</a>
+                        href="{% url 'update-client' %}">{% translate 'Account settings' %}</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-secondary navbar-btn" type="button"  

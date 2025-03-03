@@ -39,24 +39,48 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.form-layout form {
+.form-layout-update-user {
+    border-radius: 40px;
+    width: 800px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.paypal-form-layout {
+    border-radius: 40px;
+    width: 31%;
+    min-width: 500px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.general-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+}
+
+.form-layout form, .paypal-form-layout form {
     margin-bottom: 0px;
 }
 
-.form-layout h1 {
+.form-layout h1, .paypal-form-layout h1 {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
 
-.form-layout ul {
+.form-layout ul, .paypal-form-layout ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-.form-layout-article {
+.form-layout-article, .paypal-form-layout-article {
     border-radius: 40px;
     width: 800px;
     backdrop-filter: blur(10px);
@@ -65,11 +89,11 @@ body {
     margin-bottom: 48px;
 }
 
-.form-layout-article form {
+.form-layout-article form, .paypal-form-layout-article form {
     margin-bottom: 0px;
 }
 
-.form-layout-article h3 {
+.form-layout-article h3, .paypal-form-layout-article h3 {
     text-align: left;
     margin-bottom: 1rem;
     font-size: 1.8rem;
@@ -281,12 +305,19 @@ small.text-muted {
 
 .text-account-client {
     font-size: 1rem;
+    font-style: italic;
     background: linear-gradient(90deg, #84c196, #4ac76e, #2bb850, #1a9e4a, #2bb850, #4ac76e, #84c196);
     background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     animation: wave-text 3s linear infinite;
+    display: inline-block;
+}
+
+.text-account-no-subscription {
+    font-size: 1rem;
+    color: #a52626;
 }
 
 @keyframes wave-text {
@@ -296,4 +327,8 @@ small.text-muted {
     100% {
         background-position: 200% 50%;
     }
+}
+
+.text-icon {
+    font-size: 1.2rem;
 }
