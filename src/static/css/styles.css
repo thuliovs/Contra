@@ -313,6 +313,7 @@ small.text-muted {
     color: transparent;
     animation: wave-text 3s linear infinite;
     display: inline-block;
+    font-weight: 1000;
 }
 
 .text-account-no-subscription {
