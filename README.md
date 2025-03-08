@@ -2,11 +2,11 @@
 
 A web application built with Django that connects clients and writers, managing contract work with integrated PayPal subscription payments.
 
-## 📋 Overview
+### 📋 Overview
 
 The Contrarian Report is a platform designed to facilitate the connection between clients who need written content and professional writers. The system handles user management, project requests, contract management, and payment processing through PayPal subscriptions.
 
-## 🚀 Features
+### 🚀 Features
 
 - User authentication and role-based accounts (clients and writers)
 - Project management system
@@ -14,7 +14,7 @@ The Contrarian Report is a platform designed to facilitate the connection betwee
 - PayPal subscription integration for payments
 - Responsive design using Bootstrap 5
 
-## 🔧 Tech Stack
+### 🔧 Tech Stack
 
 - **Framework**: Django
 - **Database**: SQLite
@@ -24,12 +24,12 @@ The Contrarian Report is a platform designed to facilitate the connection betwee
 
 # 📦 Installation
 
-### Prerequisites
+#### Prerequisites
 
 - Python 3.8 or higher
 - Git
 
-### Setup Instructions
+#### Setup Instructions
 
 1. Clone the repository to your local machine
 
@@ -69,7 +69,7 @@ The Contrarian Report is a platform designed to facilitate the connection betwee
     PAYPAL_BILLING_SUBSCRIPTIONS_URL=https://api.sandbox.paypal.com/v1/billing/subscriptions
     ```
 
-## 🏃‍♂️ Running the Application
+# 🏃‍♂️ Running the Application
 
 1. Navigate to the `src` directory
 
