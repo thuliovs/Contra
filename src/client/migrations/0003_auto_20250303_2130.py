@@ -8,7 +8,7 @@ def populate_plan_choice(apps, schema_editor):
     PlanChoice.objects.create(
         plan = 'ST',
         name = 'Standard',
-        cost = '3.00',
+        cost = '2.99',
         is_active = True,
         description1 = 'Get access to standard articles and reports',
         description2 = 'Limited access',

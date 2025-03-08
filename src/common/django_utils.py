@@ -6,7 +6,7 @@ apps inside of this project.
 __all__ = (
     'AsyncFormMixin',
     'AsyncModelFormMixin',
-    'AsyncViewT'
+    'AsyncViewT',
     'arender',
     'alogout',
 )
@@ -20,6 +20,7 @@ from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
 
 import django.contrib.auth as auth
+from django.contrib import messages
 
 class AsyncViewT(Protocol):
     async def __call__(self, request: HttpRequest, *args, **kwargs) -> HttpResponse:
@@ -55,3 +56,9 @@ async def alogout(*render_args, **render_kargs):
     def sync_call_logout():
         auth.logout(*render_args, **render_kargs)
     await sync_call_logout()
+
+async def add_message(request, level, message, extra_tags=''):
+    @sync_to_async
+    def sync_add_message():
+        messages.add_message(request, level, message, extra_tags=extra_tags)
+    await sync_add_message()

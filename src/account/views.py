@@ -13,7 +13,7 @@ from common.auth import aanonymous_required
 
 @aanonymous_required
 async def home(request: HttpRequest) -> HttpResponse:
-    return render(request, 'account/home.html')
+    return await arender(request, 'account/home.html')
 
 
 

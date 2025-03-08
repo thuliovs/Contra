@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 import account.views
+from common.views import custom_logout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +26,5 @@ urlpatterns = [
     path('', account.views.home, name='home'),
     path('client/', include('client.urls')),
     path('writer/', include('writer.urls')),
+    path('logout/', custom_logout, name='logout'),
 ]
