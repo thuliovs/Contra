@@ -22,7 +22,7 @@ The Contrarian Report is a platform designed to facilitate the connection betwee
 - **Payment Processing**: PayPal API
 - **Dependencies**: See `requirements.txt`
 
-## 📦 Installation
+# 📦 Installation
 
 ### Prerequisites
 
