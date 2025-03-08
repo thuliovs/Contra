@@ -97,7 +97,7 @@ The Contrarian Report is a platform designed to facilitate the connection betwee
 
 5. Open your browser and go to http://127.0.0.1:8000/
 
-## 📱 Project Structure
+# 📱 Project Structure
 
 - `account/`: User authentication and management
 - `client/`: Client-specific functionality
@@ -106,19 +106,19 @@ The Contrarian Report is a platform designed to facilitate the connection betwee
 - `contrarian/`: Main project settings
 - `static/`: Static files (CSS, JS, images)
 
-## 🔑 User Roles
+### 🔑 User Roles
 
 - **Clients**: Can create projects, manage contracts, and make payments
 - **Writers**: Can view available projects, submit proposals, and manage their contracts
 - **Admin**: Can manage all aspects of the system through the Django admin interface
 
-## 💡 Development Notes
+### 💡 Development Notes
 
 - The application uses SQLite for data storage
 - PayPal integration is set up using sandbox for testing
 - The project is configured to use Bootstrap 5 for UI components
 
-## 🛡️ Security Notes
+### 🛡️ Security Notes
 
 - For production deployment, ensure to:
   - Change the `SECRET_KEY` in settings
@@ -126,11 +126,11 @@ The Contrarian Report is a platform designed to facilitate the connection betwee
   - Configure proper database credentials
   - Set up proper HTTPS with a valid SSL certificate
 
-## 📄 License
+# 📄 License
 
 See the LICENSE file for details.
 
-## 🤝 Contributing
+# 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch
